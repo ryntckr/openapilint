@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const noPathItemParametersRule = require('../../../lib/rules/no-path-item-parameters');
 
 describe('no-path-item-parameters', () => {

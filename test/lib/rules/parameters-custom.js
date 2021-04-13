@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const parametersCustomRule = require('../../../lib/rules/parameters-custom');
 
 describe('parameters-custom', () => {
@@ -153,7 +153,6 @@ describe('parameters-custom', () => {
     });
   });
 
-
   describe('PayPal-Partner-Attribution-Id parameters must not have a description', () => {
     const options = {
       whenField: 'name',
@@ -181,7 +180,6 @@ describe('parameters-custom', () => {
 
       assert.equal(failures.size, 0);
     });
-
 
     it('should report an error when the description is present', () => {
       const schema = {
@@ -238,7 +236,6 @@ describe('parameters-custom', () => {
 
       assert.equal(failures.size, 0);
     });
-
 
     it('should report an error when the description is present', () => {
       const schema = {

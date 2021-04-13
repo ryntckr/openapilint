@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const infoCustomRule = require('../../../lib/rules/info-custom');
 
 describe('info-custom', () => {
@@ -37,7 +37,6 @@ describe('info-custom', () => {
       assert.equal(failures.get(0).get('hint'), 'Expected info description to be present and to match "[a-zA-Z]"');
     });
   });
-
 
   describe('x-publicDocsPath should be present and valid', () => {
     const options = {

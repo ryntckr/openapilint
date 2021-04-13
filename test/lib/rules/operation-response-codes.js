@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const operationResponseCodesRule = require('../../../lib/rules/operation-response-codes');
 
 describe('operation-response-codes', () => {

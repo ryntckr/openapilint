@@ -1,11 +1,11 @@
 const chai = require('chai');
 const chaiAsPromised = require('chai-as-promised');
 
+const { Map } = require('immutable');
 const OpenApiLint = require('../../lib/OpenApiLint');
-const Map = require('immutable').Map;
 
-const expect = chai.expect;
-const assert = chai.assert;
+const { expect } = chai;
+const { assert } = chai;
 
 chai.use(chaiAsPromised);
 
@@ -43,7 +43,6 @@ describe('OpenApiLint', () => {
       assert.equal(lintResult.get('no-restricted-words').get('failures').size, 0);
     });
   });
-
 
   it('should return a single key with one failure for a basic no-restricted-words test', () => {
     const config = {

@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const noOrphanRefsRule = require('../../../lib/rules/no-orphan-refs');
 
 describe('no-orphan-refs', () => {

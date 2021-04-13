@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const responsesCustomRule = require('../../../lib/rules/responses-custom');
 
 describe('responses-custom', () => {

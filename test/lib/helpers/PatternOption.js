@@ -2,7 +2,7 @@ const chai = require('chai');
 
 const PatternOption = require('../../../lib/helpers/PatternOption');
 
-const assert = chai.assert;
+const { assert } = chai;
 
 describe('PatternOption', () => {
   describe('isValidPatternOption', () => {

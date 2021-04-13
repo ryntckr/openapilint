@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const rootProducesRule = require('../../../lib/rules/root-produces');
 
 describe('root-produces', () => {

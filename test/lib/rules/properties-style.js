@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const propertiesStyleRule = require('../../../lib/rules/properties-style');
 
 describe('properties-style', () => {
@@ -111,7 +111,6 @@ describe('properties-style', () => {
 
     assert.equal(failures.size, 0);
   });
-
 
   it('should report an error when a property defined in refs does not match snake case', () => {
     const schema = {

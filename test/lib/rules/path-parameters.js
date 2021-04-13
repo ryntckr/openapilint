@@ -1,7 +1,7 @@
 'use strict';
 
 const _ = require('lodash');
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const pathParametersRule = require('../../../lib/rules/path-parameters');
 
 describe('path-parameters', () => {

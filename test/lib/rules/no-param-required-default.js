@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const noParamRequiredDefaultRule = require('../../../lib/rules/no-param-required-default');
 
 describe('no-param-required-default', () => {

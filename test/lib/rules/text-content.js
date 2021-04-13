@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const textContentRule = require('../../../lib/rules/text-content');
 
 describe('text-content', () => {
@@ -130,7 +130,6 @@ describe('text-content', () => {
     });
   });
 
-
   describe('summary and description all end with a period (`.`).', () => {
     const options = {
       applyTo: [
@@ -207,7 +206,6 @@ describe('text-content', () => {
     });
   });
 
-
   describe('descriptions should not have the word supersecret, any case', () => {
     const options = {
       applyTo: [
@@ -242,7 +240,6 @@ describe('text-content', () => {
       assert.equal(failures.get(0).get('hint'), 'Expected "Bad description with superSECRET word" to not match "supersecret"');
     });
   });
-
 
   describe('title and description ref overrides all start with capital letters.', () => {
     const options = {
@@ -329,7 +326,6 @@ describe('text-content', () => {
       assert.equal(failures.get(1).get('hint'), 'Expected "bad description in override" to match "^[A-Z]"');
     });
   });
-
 
   describe('no http: links', () => {
     const options = {

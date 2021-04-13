@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const noRestrictedWordsRule = require('../../../lib/rules/no-restricted-words');
 
 describe('no-restricted-words', () => {
@@ -256,7 +256,6 @@ describe('no-restricted-words', () => {
     assert.equal(failures.get(0).get('hint'), 'Found \'restricted\'');
   });
 
-
   it('should report error when a schema object title has restricted words', () => {
     const schema = {
       paths: {
@@ -339,7 +338,6 @@ describe('no-restricted-words', () => {
     assert.equal(failures.get(0).get('location'), 'paths./pets.get.responses.200.schema.properties.petType.description');
     assert.equal(failures.get(0).get('hint'), 'Found \'restricted\'');
   });
-
 
   it('should report error when a body request property description has restricted words', () => {
     const schema = {

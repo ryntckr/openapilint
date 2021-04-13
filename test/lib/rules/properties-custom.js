@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const propertiesCustomRule = require('../../../lib/rules/properties-custom');
 
 describe('properties-custom', () => {
@@ -117,7 +117,6 @@ describe('properties-custom', () => {
 
       assert.equal(failures.size, 0);
     });
-
 
     it('should report an error when a country_code property defined in refs are incorrect', () => {
       const schema = {

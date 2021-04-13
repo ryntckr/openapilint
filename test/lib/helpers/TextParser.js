@@ -1,7 +1,7 @@
 const chai = require('chai');
 const spies = require('chai-spies');
 
-const expect = chai.expect;
+const { expect } = chai;
 
 chai.use(spies);
 

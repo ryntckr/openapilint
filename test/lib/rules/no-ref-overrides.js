@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const noRefOverridesRule = require('../../../lib/rules/no-ref-overrides');
 
 describe('no-ref-overrides', () => {

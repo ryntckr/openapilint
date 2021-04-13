@@ -2,7 +2,7 @@ const chai = require('chai');
 
 const constants = require('../../lib/constants');
 
-const assert = chai.assert;
+const { assert } = chai;
 
 describe('constants', () => {
   ['{MY_TEMPLATE}', '{template}', '{tempalteVar}'].forEach((pathElement) => {

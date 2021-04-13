@@ -1,7 +1,7 @@
 'use strict';
 
 const _ = require('lodash');
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const schemaCustomRule = require('../../../lib/rules/schema-custom');
 
 describe('schema-custom', () => {
@@ -134,7 +134,6 @@ describe('schema-custom', () => {
       assert.equal(failures.get(1).get('hint'), 'Expected schema title to be present and to match "\\s"');
     });
 
-
     it('should not report errors when titles are present and valid with alsoApplyTo:[allOf]', () => {
       const schema = {
         paths: {
@@ -206,7 +205,6 @@ describe('schema-custom', () => {
       assert.equal(failures.get(1).get('location'), 'paths./pets.put.parameters[0].schema.allOf[1]');
       assert.equal(failures.get(1).get('hint'), 'Expected schema title to be present and to match "\\s"');
     });
-
 
     it('should report errors when titles are not present', () => {
       const optionsReferencingMissingField = {

@@ -1,9 +1,9 @@
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const fs = require('fs');
 const path = require('path');
 const _ = require('lodash');
 
-const List = require('immutable').List;
+const { List } = require('immutable');
 
 const rulesPath = 'lib/rules';
 

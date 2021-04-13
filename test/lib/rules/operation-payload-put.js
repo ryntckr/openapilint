@@ -1,7 +1,7 @@
 'use strict';
 
 const _ = require('lodash');
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const operationPayloadPutRule = require('../../../lib/rules/operation-payload-put');
 
 describe('operation-payload-put', () => {

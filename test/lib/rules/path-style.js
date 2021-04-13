@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const pathStyleRule = require('../../../lib/rules/path-style');
 
 describe('path-style', () => {

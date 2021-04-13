@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const rootTagsRule = require('../../../lib/rules/tags-ref');
 
 describe('tags-ref', () => {

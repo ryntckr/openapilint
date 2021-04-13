@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const noPathDupesRule = require('../../../lib/rules/no-path-dupes');
 
 describe('no-path-dupes', () => {

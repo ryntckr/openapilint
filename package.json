@@ -12,24 +12,34 @@
     "node": ">=4.2"
   },
   "scripts": {
-    "lint": "eslint *.js ./lib ./test",
-    "pretest": "npm run lint",
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint ./lib ./test",
+    "pretest": "npm run lint"
   },
   "files": [
     "lib"
   ],
   "dependencies": {
-    "immutable": "^3.8.1",
-    "lodash": "^3.3.1"
+    "immutable": "^3.8.2",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "chai": "^4.0.2",
+    "chai": "^4.3.4",
     "chai-as-promised": "^7.1.1",
-    "chai-spies": "^0.7.1",
-    "eslint": "^4.8.0",
-    "eslint-config-airbnb-base": "^11.3.2",
-    "eslint-plugin-import": "^2.7.0",
-    "mocha": "^3.4.2"
-  }
+    "chai-spies": "^1.0.0",
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "mocha": "^8.3.2"
+  },
+  "bugs": {
+    "url": "https://github.com/braintree/openapilint/issues"
+  },
+  "homepage": "https://github.com/braintree/openapilint#readme",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": ""
 }
